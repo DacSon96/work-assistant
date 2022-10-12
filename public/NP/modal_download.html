@@ -1,0 +1,110 @@
+<div id="chipo-model">
+  <div class='chipoModal in' id='myChipoModal-order' style='z-index: 2147483647; display: block; padding-right: 0px;'>
+    <div class='ml-md chipoModal-dialog' role='document'>
+        <div class='chipoModal-content chipoModal-cp'>
+            <div class='chipoModal-header' style="padding: 13px 35px!important;">
+                <button type='button' class='close close-popup' data-dismiss='chipoModal' aria-label='Close'></button>
+                <h1 class='chipoModal-title text-success text-uppercase' id='myChipoModalLabel'
+                    style='font-weight: bold;font-size: 15px;'>Thư viện ảnh</h1>
+            </div>
+            <div class='chipoModal-body' style='min-height: auto'>
+              <div class="modal-body">
+                <div class="tabs tabs-top">
+                  <div class="tabs-nav">
+                    <div class="tabs-nav-wrap">
+                      <div class="tabs-nav-list" tyle="transform: translate(0px, 0px)">
+                        <div class="tabs-tab tabs-tab-active">
+                          <div class="tabs-tab-btn">
+                            Ảnh/Video từ shop
+                          </div>
+                        </div>
+                        <div class="tabs-tab hide-div">
+                          <div class="tabs-tab-btn text-black">
+                            Ảnh Review
+                          </div>
+                        </div>
+                        <div class="tabs-ink-bar tabs-ink-bar-animated" style="left: 0px; width: 117px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content-holder">
+                    <div class="tabs-content tabs-content-top">
+                      <div class="tabs-tabpane tabs-tabpane-active">
+                        <div class="row-cp dpl-flex justify-content-end">
+                          <button id="download-all" type="button" class="btn btn-primary btn-background-ghost" >
+                            <span class="anticon anticon-download"><svg viewBox="64 64 896 896"
+                              focusable="false" data-icon="download" width="1em"
+                              height="1em"
+                              fill="currentColor"
+                              aria-hidden="true">
+                              <path
+                                d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"
+                              ></path></svg></span
+                            >
+                              <span>Tải tất cả ảnh/video
+                            </span>
+                          </button>
+                          <button id="download-checked" type="button" class="btn btn-primary btn-background-ghost mgl20" disabled="">
+                            <span role="img" aria-label="download" class="anticon anticon-download">
+                              <svg
+                                  viewBox="64 64 896 896" focusable="false" data-icon="download" width="1em" height="1em"
+                                  fill="currentColor" aria-hidden="true">
+                                  <path
+                                    d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"
+                                  ></path>
+                              </svg>
+                            </span
+                            ><span>Tải nhiều ảnh/video</span>
+                          </button>
+                        </div>
+                        <div class="row-cp draw-product-item">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='chipoModal-footer'>
+                <a type='button' class='btn-popup btn-popup-chipo close-popup' target='_blank'>Đóng</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class='chipoModal' id='myChipoModal-orderError' style='z-index: 9999999999'>
+    <div class='chipoModal-dialog' role='document'>
+        <div class='chipoModal-content chipoModal-cp'>
+            <div class='chipoModal-header'>
+                <button type='button' class='close' data-dismiss='chipoModal' aria-label='Close'></button>
+                <h4 class='chipoModal-title text-danger text-uppercase'
+                    style='font-weight: bold'>Thêm vào giỏ hàng thất bại</h4>
+            </div>
+            <div class='chipoModal-body' style='min-height: auto'>
+                <div class='box-deposit pd15 row'>
+                    <div class='ls-warning'>
+                        <p>CHÚNG TÔI KHUYẾN CÁO BẠN KHÔNG NÊN DÙNG GOOGLE DỊCH KHI ĐẶT HÀNG.</p>
+                        <p>KHI SỬ DỤNG GOOGLE DỊCH THÔNG TIN SẢN PHẨM CỦA SHOP/SẢN PHẨM SẼ BỊ SAI LỆCH VÀ ĐƠN HÀNG CÓ
+                            THỂ BỊ HUỶ</p>
+                    </div>
+                    <br>
+                    <div class='ls-deposit-error' style="text-align: center">
+                        <p></p>
+                    </div>
+                    <div class='ls-wrong-version'>
+                        <p>Phiên bản extension đã cũ, hãy tải phiên bản mới tại <a href="https://chrome.google.com/webstore/detail/c%C3%B4ng-c%E1%BB%A5-%C4%91%E1%BA%B7t-h%C3%A0ng-naipot/ojecmeaghlcaiekkffhblonfnlcbepbl" target="_blank">ĐÂY</a></p>
+                        <p>hoặc</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class='chipoModal-footer'>
+                <a type='button' class='btn btn-default' data-dismiss='chipoModal'>Đóng</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="chipoModal-backdrop in"></div>
+</div>
+

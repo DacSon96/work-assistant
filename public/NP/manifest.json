@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Naipot Order Assistant",
+  "version": "1.0.0",
+  "description": "Naipot Order Assistant - Công cụ hỗ trợ mua hàng",
+  "icons": {
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Naipot Order Assistant"
+  },
+  "permissions": [
+    "storage", "activeTab"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "content_scripts": [
+    {
+      "css": [ "css/style.css" ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.js", "site.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["*"],
+    "matches": ["<all_urls>"]
+  }]
+}
